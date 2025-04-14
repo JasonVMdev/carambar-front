@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
   text-align: center;
+  padding: 3rem;
+  font-family: 'knewave', system-ui;
+  background: #FEED00;
+  height: 100vh;
+  width: 100vw;
+  background: 
+  url(/froisse.png),
+  repeating-linear-gradient(
+    to right,
+    #F50057 0,
+    #F50057 2vw,
+    #fff 2vw,
+    #fff 4vw,
+    #F50057 4vw,
+    #F50057 6vw,
+    #fff 6vw,
+    #fff 8vw,
+    #F50057 8vw,
+    #F50057 10vw,
+    #FEED00 10vw,
+    #FEED00 90vw,
+    #F50057 90vw,
+    #F50057 92vw,
+    #fff 92vw,
+    #fff 94vw,
+    #F50057 94vw,
+    #F50057 96vw,
+    #fff 96vw,
+    #fff 98vw,
+    #F50057 98vw,
+    #F50057 100vw
+  );
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  color: #E3000D;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  height: 10vh;
+}
+
+button {
+  background: #E20A1C;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #F50057;
+}
+
+.blagues {
+  margin-top: 2rem;
+  color: #FFF;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .blagues{
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
